@@ -5,7 +5,7 @@ This client facilitates communication among all your concurrently running nodejs
 ## Install
 
 ```bash
-npm install pm2-prom-module-client
+npm install @ks-infra/pm2-prom-module-client
 ```
 
 ## How to use
@@ -16,7 +16,7 @@ Have a look on example:
 
 ```typescript
 import client from 'prom-client';
-import { initMetrics } from 'pm2-prom-module-client';
+import { initMetrics } from '@ks-infra/pm2-prom-module-client';
 
 const registry = new client.Registry();
 const PREFIX = `nodejs_app_`;
@@ -38,4 +38,4 @@ app.get('/*', async (req: AppFastifyRequest, res) => {
 });
 ```
 
-> Do not forget to install `pm2-prom-module` to your PM2.
+> Do not forget to install `@ks-infra/pm2-prom-module` to your PM2.
